@@ -82,8 +82,8 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
 
 export default function FAQSection() {
   return (
-    <section className="py-24 relative">
-      <div className="max-w-3xl mx-auto px-6">
+    <section className="py-16 md:py-24 relative">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

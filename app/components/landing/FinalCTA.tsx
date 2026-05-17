@@ -5,7 +5,7 @@ import { ArrowRight, Shield, Server, Lock } from "lucide-react";
 
 export default function FinalCTA() {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-16 md:py-24 relative overflow-hidden">
       {/* Gradient background */}
       <div className="absolute inset-0"
         style={{
@@ -20,7 +20,7 @@ export default function FinalCTA() {
       {/* Grid */}
       <div className="absolute inset-0 grid-pattern opacity-20" />
 
-      <div className="relative max-w-4xl mx-auto px-6 text-center">
+      <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -32,7 +32,7 @@ export default function FinalCTA() {
             Ready to Get Started?
           </div>
 
-          <h2 className="text-4xl md:text-6xl font-black tracking-tight leading-[1.05] mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-black tracking-tight leading-[1.05] mb-6">
             Ready to Turn WhatsApp Into{" "}
             <span className="green-gradient-text">Your Biggest Revenue Channel?</span>
           </h2>

@@ -66,11 +66,11 @@ const tiers = [
 
 export default function PricingSection() {
   return (
-    <section id="pricing" className="py-24 relative overflow-hidden">
+    <section id="pricing" className="py-16 md:py-24 relative overflow-hidden">
       <div className="absolute inset-0" style={{
         background: "radial-gradient(ellipse at 50% 0%, rgba(37,211,102,0.04) 0%, transparent 60%)"
       }} />
-      <div className="relative max-w-7xl mx-auto px-6">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

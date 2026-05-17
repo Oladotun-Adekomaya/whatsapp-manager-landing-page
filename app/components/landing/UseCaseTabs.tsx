@@ -99,9 +99,9 @@ export default function UseCaseTabs() {
   const tab = tabs[activeTab];
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-16 md:py-24 relative overflow-hidden">
       <div className="absolute inset-0 dot-pattern opacity-15" />
-      <div className="relative max-w-7xl mx-auto px-6">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -169,12 +169,12 @@ export default function UseCaseTabs() {
             </div>
 
             {/* Node diagram */}
-            <div className="bg-[#111] rounded-[12px] border border-[#1a1a1a] p-4 overflow-hidden">
+            <div className="bg-[#111] rounded-[12px] border border-[#1a1a1a] p-4">
               <div className="flex items-center gap-2 mb-3">
                 <div className="w-2 h-2 rounded-full" style={{ background: tab.accent }} />
                 <span className="text-xs font-semibold text-[#555]">Workflow Canvas</span>
               </div>
-              <div className="overflow-x-auto">
+              <div className="overflow-x-auto -mx-4 px-4">
                 <NodeDiagram nodes={tab.nodes} edges={tab.edges} />
               </div>
             </div>

@@ -127,8 +127,8 @@ const cardVariants = {
 
 export default function FeaturesGrid() {
   return (
-    <section id="features" className="py-24 relative">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="features" className="py-16 md:py-24 relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

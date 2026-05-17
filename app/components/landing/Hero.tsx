@@ -97,7 +97,7 @@ export default function Hero() {
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full"
         style={{ background: "radial-gradient(ellipse, rgba(37,211,102,0.06) 0%, transparent 70%)" }} />
 
-      <div className="relative max-w-7xl mx-auto px-6 py-24">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-24">
         <div className="text-center max-w-4xl mx-auto mb-12">
           {/* Badge */}
           <motion.div
@@ -113,7 +113,7 @@ export default function Hero() {
           <motion.h1
             {...fadeUp}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-5xl md:text-6xl lg:text-7xl font-black tracking-tight leading-[1.05] mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight leading-[1.05] mb-6"
           >
             Turn WhatsApp Into Your{" "}
             <span className="relative inline-block">
@@ -192,9 +192,13 @@ export default function Hero() {
           {/* Glow behind mockup */}
           <div className="absolute -inset-4 rounded-2xl opacity-30"
             style={{ background: "radial-gradient(ellipse at 50% 50%, rgba(37,211,102,0.15) 0%, transparent 70%)" }} />
-          <BrowserMockup url="app.wamanager.io/dashboard">
-            <DashboardMockup />
-          </BrowserMockup>
+          <div className="overflow-x-auto rounded-[12px]">
+            <div className="min-w-[600px]">
+              <BrowserMockup url="app.wamanager.io/dashboard">
+                <DashboardMockup />
+              </BrowserMockup>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>
